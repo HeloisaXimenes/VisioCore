@@ -1,0 +1,240 @@
+/* Variáveis de cores */
+:root {
+    --blue: #1B263B;
+    --cyan: #00ADB5;
+    --white: #F5F5F5;
+    --light-gray: #EAEAEA;
+    --dark-gray: #4B4B4B;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--blue);
+    background-color: var(--light-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Container padrão */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--cyan);
+}
+
+/* Botão do menu (para dispositivos móveis) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 24px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--cyan);
+    color: var(--white);
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 5px solid var(--blue);
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+/* Sobre */
+.about {
+    background-color: var(--white);
+    padding: 60px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    color: var(--dark-gray);
+}
+
+/* Serviços */
+.services {
+    background-color: var(--white);
+    padding: 60px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--blue);
+}
+
+.service-item p {
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+/* Contato */
+.contact {
+    background-color: var(--white);
+    padding: 60px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 15px; /* Espaço entre os botões */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact .btn-secondary {
+    background-color: var(--cyan);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.contact .btn-secondary:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+}
